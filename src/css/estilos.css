@@ -1,0 +1,148 @@
+body {
+    font-family: 'Outfit',
+    sans-serif;
+    background-image: url(../imagens/paisagem\ principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+}
+
+.cabecalho .titulo {
+    color: #f1ecff;
+}
+.cabecalho .nome {
+    width: px;
+    height: px;
+}
+
+.seta-vamos {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+    
+}
+
+.lista-jujutsu{
+    
+    width: 690px;
+    height: 1120px;
+    position: relative;
+}
+
+.btn-seta {
+    background-color: chartreus#fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #05ff50;
+}
+
+.cartao {
+    
+    background-color: #0b0913;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo-1 {
+    background: url(../imagens/paisagem\ 1.jpg) no-repeat;
+}
+.fundo-2 {
+    background: url(../imagens/paisagem\ 2.jpg) no-repeat;
+}
+.fundo-3 {
+    background: url(../imagens/paisagem\ 1.jpg) no-repeat;
+}
+
+.cartao.info {
+    background-color:rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cartao .info .nome {
+    color: rgb(250, 250, 250);
+    font-size: 45px;
+}
+
+.cartao .info .vida {
+    background-color: black;
+    color: #f1ecff;
+    padding: 13px 20px;
+    border-radius:50px;
+    font-size: 35px;
+}
+
+.cartao .container-imagem {
+    text-align: center;
+}
+
+.cartao .imagem-pokemon {
+    max-width: 100%;
+    max-height: 600px;
+    padding: 20px;
+}
+
+.cartao .descricao {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .descricao .titulos {
+    background-color: black;
+    color: #f1ecff;
+    font-size: 45px;
+    padding: 18px;
+}
+
+.cartao .descricao .texto {
+    font-size: 35px;
+    padding: 22px;
+    text-align: justify;
+    max-height: 190px;
+    overflow-y: auto;
+}
+
+.tamanho {
+    max-width: 100%;
+}
